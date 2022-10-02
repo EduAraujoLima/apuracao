@@ -1,0 +1,11 @@
+<mat-card *ngIf="candidato">
+  <mat-card-header>
+    <mat-card-title class="text-center">{{candidato.nm | titlecase}} - {{candidato.n}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <p class="d-block"> <b>Votos válidos:</b> {{candidato.vap | number: '1.0-0'}}</p>
+      <p class="ml-3"> <b>Pocentagem votos:</b> {{candidato.pvap}}%</p>
+    </div>
+  </mat-card-content>
+</mat-card>
