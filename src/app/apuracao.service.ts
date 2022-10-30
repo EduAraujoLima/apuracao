@@ -6,7 +6,7 @@ import { RootObject } from './models/models.interface';
   providedIn: 'root'
 })
 export class ApuracaoService {
-  readonly url = `https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json`;
+  readonly url = `https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json`;
   constructor(private http: HttpClient) { }
 
   getApuracao() {
